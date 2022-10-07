@@ -10,28 +10,29 @@
 <body>
   <h1>Jogo da Velha</h1> 
 
-  <div>
-    <div id="1" class="container">-</div>
-    <div id="2" class="container">-</div>
-    <div id="3" class="container">-</div>
-  </div>
+  <div class="content">
+    <div>
+      <div id="1" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="2" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="3" class="container" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+      <div id="4" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="5" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="6" class="container" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+    <div>
+      <div id="7" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="8" class="container" onclick="escolherQuadrado(this.id)">-</div>
+      <div id="9" class="container" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+  </div>  
 
-  <div>
-    <div id="1" class="container">-</div>
-    <div id="2" class="container">-</div>
-    <div id="3" class="container">-</div>
-  </div>
-
-  <div>
-    <div id="1" class="container">-</div>
-    <div id="2" class="container">-</div>
-    <div id="3" class="container">-</div>
-  </div>
-
-  <div class="jogador">
-    <label for="jogador">jogador:</label>
-    <label for="jogador" id="jogadore_selecionado"></label>
-  </div>
+    <div id="jogador">
+      <label for="jogador">jogador:</label>
+      <label for="jogador" id="jogador_selecionado"></label>
+    </div>
+  
 
   <div class="vencedor">
     <label for="vencedor">Vencedor:</label>
@@ -39,7 +40,7 @@
   </div>
 
   <div>
-    <button id="resultado">
+    <button id="resultado" onclick="reiniciar()">
       reiniciar
     </button>
   </div>

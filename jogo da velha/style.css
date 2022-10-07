@@ -17,24 +17,40 @@ h1 {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: bolder;
+  
+}
+
+.content {
+  width: 350px;
+  height: 300px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ margin-top: 15px;
 }
 .container {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   text-align:center;
   color: #eee;
   background: #eee;
   display: inline-block;
   padding: 40px;
-  font-size: 50px;
+  border-radius: 5px;
+  font-size: 30px;
   margin: 5px;
   cursor: pointer;
 }
-
-.jogador,
+#jogador {
+  font-size: 30px;
+  margin-top: 20px;
+}
 .vencedor {
   font-size: 30px;
-  margin: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-block: 10px;
 }
 
 
@@ -47,9 +63,11 @@ h1 {
   box-shadow: 1px 1px 10px 1px;
   text-transform: uppercase;
   font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
   transition: all .4s;
 }
 #resultado:hover  {
   background-color: greenyellow;
+  box-shadow: 1px 1px 10px 1px greenyellow;
 }
